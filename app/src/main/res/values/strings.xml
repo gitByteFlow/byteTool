@@ -2,11 +2,15 @@
     <string name="app_name">工具</string>
     <string name="action_settings">设置</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
+    <string name="first_fragment_label">工具箱</string>
+    <string name="second_fragment_label">NFC工具</string>
     <string name="next">Next</string>
-    <string name="previous">Previous</string>
+    <string name="previous">返回</string>
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="nfc">NFC</string>
+    <string name="ble">蓝牙打印</string>
+    <string name="tts">TTS</string>
+    <string name="wifi">WiFi</string>
 </resources>
