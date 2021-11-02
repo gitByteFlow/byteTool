@@ -1,8 +1,10 @@
 package com.chris.byteflow.tool
 
 import androidx.multidex.MultiDexApplication
+import dagger.hilt.android.HiltAndroidApp
 
 
+@HiltAndroidApp
 class App : MultiDexApplication() {
 
     companion object {

@@ -1,5 +1,6 @@
 package com.chris.byteflow.tool
 
+import android.nfc.NdefRecord
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater

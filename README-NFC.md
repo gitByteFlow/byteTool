@@ -6,6 +6,18 @@
 
 
 
+##  工作模式
+
+配备 NFC 的 Android 设备同时支持三种主要操作模式：
+
+1. **读写器模式**，允许 NFC 设备读取和/或写入无源 NFC 标签和贴纸。
+2. **P2P模式**，允许NFC设备与其他NFC对等方交换数据；Android Beam 使用此操作模式。
+3. **卡模拟模式**，允许NFC设备本身充当NFC卡。然后可以通过外部 NFC 读取器（例如 NFC 销售点终端）访问模拟的 NFC 卡。
+
+
+
+
+
 ## 卡片
 ![image](https://user-images.githubusercontent.com/13781081/138247722-7a077c1b-3d17-401f-94be-ec9920380245.png)
 
@@ -27,7 +39,6 @@
 ### 读卡器与上位机通信机制
 
 ![image](https://user-images.githubusercontent.com/13781081/138248126-cdd0eb28-9c8a-4471-9cea-0b6bdbf99e24.png)
-
 
 
 
