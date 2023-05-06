@@ -1,6 +1,6 @@
 @file:JvmName("BindingAdapter")
 
-package com.chris.byteflow.tool.adapter
+package com.chris.byteflow.tool.base
 
 import android.graphics.Outline
 import android.view.View

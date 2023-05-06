@@ -9,6 +9,11 @@
             name="viewModel"
             type="com.chris.byteflow.tool.viewmodels.NfcViewModel" />
 
+        <variable
+            name="newViewModel"
+            type="com.chris.byteflow.tool.viewmodels.TestViewModel" />
+
+
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -16,13 +21,42 @@
         android:layout_height="match_parent"
         tools:context=".NFCActivity">
 
-
         <TextView
 
             android:layout_width="20dp"
             android:layout_height="20dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <com.chris.byteflow.tool.custom.SignatureView
+            android:id="@+id/signature_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp"
+            android:background="@android:color/white" />
+
+        <TextView
+            android:id="@+id/clear_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{viewModel::test}"
+            android:padding="50dp"
+            android:text="清除"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <TextView
+            android:id="@+id/suer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{newViewModel::test}"
+            android:paddingHorizontal="50dp"
+            android:paddingVertical="20dp"
+            android:text="确认"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

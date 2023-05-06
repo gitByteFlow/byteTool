@@ -17,6 +17,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Tool">
 
+        <meta-data
+            android:name="androidx.lifecycle.ViewModelProvider.DefaultLifecycleObserver"
+            android:value="androidx.lifecycle.viewmodel.savedstate.SavedStateViewModelFactory" />
+
+
         <activity
             android:name=".NFCActivity"
             android:exported="true">

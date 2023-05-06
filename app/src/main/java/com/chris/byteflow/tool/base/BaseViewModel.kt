@@ -1,30 +1,11 @@
 package com.chris.byteflow.tool.base
 
-import androidx.lifecycle.Lifecycle
-import androidx.lifecycle.LifecycleObserver
-import androidx.lifecycle.OnLifecycleEvent
 import androidx.lifecycle.ViewModel
 
-abstract class BaseViewModel : ViewModel(), LifecycleObserver {
+abstract class BaseViewModel : ViewModel() {
+    private val TAG = "BaseViewModel"
 
-    fun observe(lifecycle: Lifecycle) {
-        lifecycle.addObserver(this)
+    override fun onCleared() {
+        super.onCleared()
     }
-
-    @OnLifecycleEvent(Lifecycle.Event.ON_CREATE)
-    open fun onCreated() {
-
-    }
-
-    @OnLifecycleEvent(Lifecycle.Event.ON_START)
-    open fun onStart() {
-
-    }
-
-    @OnLifecycleEvent(Lifecycle.Event.ON_STOP)
-    open fun onStop() {
-
-    }
-
-
 }
